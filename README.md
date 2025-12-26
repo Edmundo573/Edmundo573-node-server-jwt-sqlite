@@ -81,3 +81,32 @@ La colaboración comunitaria transforma el altar en plaza pública digital.
 
 📜 Licencia
 MIT — compartido con ética y libertad, ahora con visión de comunidad.
+# 🛡️ Node-Server-JWT-SQLite
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-stable-success)
+
+El Ritual del Servidor con Llave y Memoria  
+Bienvenido al templo digital de autenticación y persistencia.  
+Este proyecto no es solo código: es legado ceremonial.  
+
+---
+
+## 🔑 Ejemplo de uso de API
+
+### Login
+```http
+POST /auth/login
+Content-Type: application/json
+
+{
+  "username": "edmundo",
+  "password": "clave123"
+}
+
+
+
+
+
+
