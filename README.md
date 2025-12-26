@@ -107,6 +107,14 @@ Content-Type: application/json
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR..."
 }
+POST /tasks
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "title": "Auditar altar digital",
+  "completed": false
+}
 
 
 
