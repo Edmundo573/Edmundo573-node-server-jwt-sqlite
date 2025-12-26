@@ -1,0 +1,102 @@
+markdown
+# ⚙️ Node-Server-JWT-SQLite
+
+Servidor Node.js con autenticación JWT y persistencia en SQLite.  
+Proyecto ceremonial y pedagógico que integra roles, auditoría y guardianes digitales.
+
+---
+
+## 📂 Estructura del proyecto
+
+node-server-jwt-sqlite/
+├── index.js                                # Servidor principal
+├── db.js                                      # Inicialización de SQLite
+├── package.json                        # Dependencias y scripts
+├── .env.example            # Variables de entorno
+├── audit/
+│   └── logger.js                      # Auditoría de acciones
+├── middleware/
+│   └── auth.js                          # Middleware de autenticación y roles
+├── models/
+│   ├── user.js                          # Modelo de usuarios
+│   └── task.js                          # Modelo de tareas
+├── routes/
+│   ├── auth.js                          # Rutas de login/registro
+│   └── tasks.js                        # Rutas de tareas
+├── logs/                   # Carpeta donde se guardan auditorías
+└── data/                   # Carpeta donde se guarda la base SQLite
+
+Código
+
+---
+
+## 📥 Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Edmundo573/Edmundo573-node-server-jwt-sqlite.git
+   cd Edmundo573-node-server-jwt-sqlite
+Instalar dependencias:
+
+bash
+npm install
+Configurar variables de entorno:
+
+bash
+cp .env.example .env
+Edita .env y coloca tu JWT_SECRET único y fuerte.
+
+Iniciar servidor:
+
+bash
+npm run dev
+🔑 Uso de la API
+Registro
+http
+POST /auth/register
+Content-Type: application/json
+
+{
+  "username": "usuario",
+  "password": "claveSegura",
+  "role": "admin"
+}
+Login
+http
+POST /auth/login
+Content-Type: application/json
+
+{
+  "username": "usuario",
+  "password": "claveSegura"
+}
+Crear tarea
+http
+POST /tasks
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "title": "Defender altar digital",
+  "completed": false
+}
+🛡️ Auditoría
+Cada acción queda registrada en logs/ como archivo JSONL.
+Ejemplo de entrada:
+
+json
+{
+  "timestamp": "2025-12-26T22:20:00Z",
+  "user": "edmundo",
+  "action": "CREATE_TASK",
+  "details": {
+    "task_id": 5,
+    "title": "Defender altar digital"
+  }
+}
+🌱 Filosofía
+Este proyecto no es solo código: es un altar digital.
+Cada commit es un capítulo ceremonial, cada release un acta fundacional, y cada log una memoria viva.
+
+📜 Licencia
+MIT — compartido con ética y libertad.
