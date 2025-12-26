@@ -41,3 +41,43 @@ cp .env.example .env
 
 # Iniciar servidor en modo desarrollo
 npm run dev
+🛣️ Roadmap hacia la versión 2.0.0 — El Camino de la Escalabilidad Comunitaria
+🚀 Objetivos técnicos
+Microservicios → separar autenticación, tareas y auditoría en servicios independientes para mayor modularidad.
+
+API pública → documentación con Swagger/OpenAPI para que otros puedan integrarse fácilmente.
+
+Base de datos avanzada → migración opcional de SQLite a PostgreSQL para proyectos de mayor escala.
+
+Gestión de usuarios → roles extendidos (admin, editor, lector) y permisos granulares.
+
+Auditoría completa → logs con trazabilidad y exportación en JSON/CSV.
+
+Integración comunitaria → endpoints para compartir tareas entre usuarios, fomentando colaboración.
+
+📂 Estructura proyectada
+services/auth/ → microservicio de autenticación.
+
+services/tasks/ → microservicio de gestión de tareas.
+
+services/audit/ → microservicio de auditoría y logs.
+
+docs/api/ → documentación OpenAPI.
+
+config/ → configuración centralizada para entornos múltiples.
+
+🛡️ Filosofía ceremonial
+La versión 2.0.0 representa la madurez del altar digital:
+
+Los microservicios son templos independientes que dialogan entre sí.
+
+La API pública abre las puertas a la comunidad.
+
+La migración de base de datos simboliza el paso de piedra a montaña.
+
+La auditoría completa asegura que cada acción quede inscrita en memoria viva.
+
+La colaboración comunitaria transforma el altar en plaza pública digital.
+
+📜 Licencia
+MIT — compartido con ética y libertad, ahora con visión de comunidad.
