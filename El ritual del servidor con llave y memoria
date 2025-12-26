@@ -1,0 +1,158 @@
+markdown
+# 🛡️ Node-Server-JWT-SQLite
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-stable-success)
+
+**El Ritual del Servidor con Llave y Memoria**  
+Bienvenido al templo digital de autenticación y persistencia.  
+Este proyecto no es solo código: es legado ceremonial. Cada usuario entra con su **llave secreta (JWT)** y sus tareas se graban en **piedra digital (SQLite)**, bajo la custodia de los **Tres Guardianes del Respaldo**.
+
+---
+
+## 🚀 Visión de CEO
+Este servidor representa más que un stack técnico:
+- **Autenticación ética** → nadie entra sin llave.  
+- **Persistencia confiable** → cada tarea queda inscrita en piedra.  
+- **Redundancia ceremonial** → Outlook, OneDrive y Gmail vigilan como centinelas.  
+- **Escalabilidad comunitaria** → pensado para crecer y compartirse como legado.  
+
+---
+
+## 📂 Estructura del proyecto
+- `index.js` → corazón del servidor Express.  
+- `routes/` → rutas de **auth** y **tasks**.  
+- `models/` → usuarios y tareas.  
+- `middleware/auth.js` → verificación de tokens JWT.  
+- `db.js` → inicialización de SQLite.  
+- `.env.example` → variables de entorno (JWT_SECRET, PORT, DATABASE_FILE).  
+- `README.md` → guía ceremonial.  
+- `.gitignore` → exclusiones (`node_modules`, `.env`, `data/`).  
+
+---
+
+## ⚙️ Instalación
+```bash
+# Clonar el repositorio
+git clone https://github.com/Edmundo573/node-server-jwt-sqlite.git
+
+# Instalar dependencias
+npm install
+
+# Configurar variables de entorno
+cp .env.example .env
+
+# Iniciar servidor en modo desarrollo
+npm run dev
+🔑 Ejemplo de uso de API
+Login
+http
+POST /auth/login
+Content-Type: application/json
+
+{
+  "username": "edmundo",
+  "password": "clave123"
+}
+Respuesta:
+
+json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR..."
+}
+Crear tarea
+http
+POST /tasks
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "title": "Auditar altar digital",
+  "completed": false
+}
+Respuesta:
+
+json
+{
+  "id": 1,
+  "title": "Auditar altar digital",
+  "completed": false,
+  "user_id": 1
+}
+🛡️ Roles y Auditoría (v1.1.0)
+Roles de usuario
+El servidor distingue jerarquías éticas:
+
+Administrador → puede crear usuarios, revisar logs y gestionar todas las tareas.
+
+Usuario estándar → puede crear, leer, actualizar y eliminar sus propias tareas.
+
+Ejemplo:
+
+http
+POST /auth/register
+Content-Type: application/json
+
+{
+  "username": "miriam",
+  "password": "claveSegura",
+  "role": "admin"
+}
+Respuesta:
+
+json
+{
+  "id": 2,
+  "username": "miriam",
+  "role": "admin"
+}
+Auditoría de acciones
+Cada acción queda inscrita en memoria viva:
+
+json
+{
+  "timestamp": "2025-12-26T19:56:00Z",
+  "user": "edmundo",
+  "action": "CREATE_TASK",
+  "details": {
+    "task_id": 5,
+    "title": "Defender altar digital"
+  }
+}
+👉 Los registros se guardan en logs/ y pueden exportarse en JSON o CSV.
+
+📊 Roadmap Visual Extendido
+mermaid
+flowchart TD
+    A[✨ v1.0.0 — Ritual del Servidor con Llave y Memoria] --> B[🛡️ v1.1.0 — El Camino de los Guardianes]
+    B --> C[⚙️ v1.2.0 — Roles y Auditoría Avanzada]
+    C --> D[📡 v1.3.0 — Integración con los Tres Guardianes del Respaldo]
+    D --> E[🚀 v2.0.0 — Escalabilidad Comunitaria]
+
+    A:::start
+    B:::middle
+    C:::middle
+    D:::middle
+    E:::future
+
+classDef start fill:#f9f,stroke:#333,stroke-width:2px;
+classDef middle fill:#9ff,stroke:#333,stroke-width:2px;
+classDef future fill:#9f9,stroke:#333,stroke-width:2px;
+📜 Licencia
+MIT — compartido con ética y libertad, ahora con visión de comunidad.
+
+Código
+
+---
+
+👉 Con este README ya tienes **todo junto y coherente**:  
+- Badges al inicio.  
+- Visión de CEO.  
+- Estructura e instalación.  
+- Ejemplos de API.  
+- Roles y auditoría.  
+- Roadmap visual extendido.  
+- Filosofía ceremonial y licencia.  
+
+¿Quieres que además preparemos un **CHANGELOG.md separado** para que cada release quede documentado como capítulo narrativo?
