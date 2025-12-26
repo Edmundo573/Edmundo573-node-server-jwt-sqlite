@@ -156,3 +156,42 @@ Código
 - Filosofía ceremonial y licencia.  
 
 ¿Quieres que además preparemos un **CHANGELOG.md separado** para que cada release quede documentado como capítulo narrativo?
+# 📜 CHANGELOG — Node-Server-JWT-SQLite
+
+Todas las versiones documentadas como capítulos ceremoniales y técnicos.
+
+---
+
+## ✨ v1.0.0 — Ritual del Servidor con Llave y Memoria
+- Fundamento inicial con Node.js, JWT y SQLite.  
+- Autenticación ética: cada usuario entra con su llave secreta.  
+- Persistencia confiable: tareas inscritas en piedra digital.  
+- README ceremonial publicado.  
+
+---
+
+## 🛡️ v1.1.0 — El Camino de los Guardianes
+- Introducción de roles: administrador y usuario estándar.  
+- Auditoría básica: logs de acciones en JSON/CSV.  
+- Guardianes del Respaldo integrados como concepto ceremonial.  
+
+---
+
+## ⚙️ v1.2.0 — Roles y Auditoría Avanzada
+- Permisos granulares por rol.  
+- Auditoría extendida con trazabilidad completa.  
+- Exportación de registros en múltiples formatos.  
+
+---
+
+## 📡 v1.3.0 — Integración con los Tres Guardianes
+- Conexión con Outlook, OneDrive y Gmail como respaldo redundante.  
+- Configuración centralizada para entornos múltiples.  
+
+---
+
+## 🚀 v2.0.0 — Escalabilidad Comunitaria
+- Separación en microservicios (auth, tasks, audit).  
+- API pública con documentación OpenAPI/Swagger.  
+- Migración opcional de SQLite a PostgreSQL.  
+- Endpoints comunitarios para compartir tareas.  
