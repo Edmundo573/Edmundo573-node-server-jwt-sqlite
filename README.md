@@ -104,6 +104,9 @@ Content-Type: application/json
   "username": "edmundo",
   "password": "clave123"
 }
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR..."
+}
 
 
 
